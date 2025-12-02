@@ -1,4 +1,4 @@
-- host: 
+- hosts: slave_node
   become: true
   tasks:
     - name: update ubuntu repo and cache
@@ -21,5 +21,5 @@
         src: /opt/apache-maven-3.9.11-bin.tar.gz
         dest: /opt
         remote_src: yes
-        
+
 
